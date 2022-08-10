@@ -1,0 +1,671 @@
+/*-----------------------------------*\
+  #style.css
+\*-----------------------------------*/
+body {
+  height: auto;
+}
+/**
+ * copyright 2022 codewithsadee
+ */
+
+/*-----------------------------------*\
+  #CUSTOM PROPERTY
+\*-----------------------------------*/
+
+/*-----------------------------------*\
+  #RESET
+\*-----------------------------------*/
+
+/*-----------------------------------*\
+  #REUSED STYLE
+\*-----------------------------------*/
+
+/*-----------------------------------*\
+  #HEADER
+\*-----------------------------------*/
+
+/*-----------------------------------*\
+  #HERO
+\*-----------------------------------*/
+
+/*-----------------------------------*\
+  #FEATURES
+\*-----------------------------------*/
+
+/*-----------------------------------*\
+  #ABOUT
+\*-----------------------------------*/
+
+/*-----------------------------------*\
+  #ABOUT 2
+\*-----------------------------------*/
+
+/*-----------------------------------*\
+  #APP
+\*-----------------------------------*/
+
+/*-----------------------------------*\
+  #BLOG
+\*-----------------------------------*/
+
+/*-----------------------------------*\
+  #FOOTER
+\*-----------------------------------*/
+
+/*-----------------------------------*\
+  #BACK TO TOP
+\*-----------------------------------*/
+
+/*-----------------------------------*\
+  #MEDIA QUERIES
+\*-----------------------------------*/
+* {
+  padding: 0;
+  margin: 0;
+}
+.container {
+  max-width: 95%;
+  margin: auto;
+}
+header {
+  padding: 25px 0;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  position: fixed;
+  background-color: white;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+}
+.back {
+  background-color: hsl(22, 90%, 56%);
+  padding: 15px 17px;
+  cursor: pointer;
+  color: white;
+  position: fixed;
+  top: 75%;
+  z-index: 1;
+  border-radius: 50%;
+  right: -5%;
+  transition: ease 0.3s;
+  overflow: hidden;
+}
+.back ion-icon {
+  font-size: 1.4rem;
+}
+
+header .container .headerItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .container .headerItem .title h1 {
+  font-size: 45px;
+  font-weight: bold;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  border: 2px solid black;
+}
+header .container .headerItem .title .list {
+  display: none;
+}
+header .container .headerItem nav {
+  display: flex;
+  gap: 3rem;
+}
+header .container .headerItem nav ul {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+header .container .headerItem nav ul li a {
+  text-decoration: none;
+  font-size: 1rem;
+  color: black;
+  font-weight: bold;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  text-transform: capitalize;
+}
+header .container .headerItem nav ul li a.active {
+  color: hsl(22, 90%, 56%);
+}
+header .container .headerItem nav button {
+  background-color: hsl(22, 90%, 56%);
+  border: none;
+  color: white;
+  font-size: 1rem;
+  padding: 1rem 2.2rem;
+  font-weight: 300;
+  cursor: pointer;
+  border-radius: 0.3rem;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+.headerItem .list {
+  outline: none;
+  background-color: hsl(22, 90%, 56%);
+  color: white;
+  border: none;
+  font-size: 2.5rem;
+  cursor: pointer;
+  padding: 0px 4px;
+}
+
+@media only screen and (max-width: 850px) {
+  header .container {
+    max-width: 90%;
+    margin: auto;
+  }
+  header .container .headerItem {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  header .container .headerItem .title {
+    display: flex;
+    justify-content: space-between;
+
+    align-items: center;
+  }
+  header .container .headerItem .title .list {
+    display: block;
+  }
+  header .container .headerItem nav ul {
+    display: block;
+  }
+  header .container .headerItem nav ul li {
+    margin-bottom: 2rem;
+  }
+  header .container .headerItem nav {
+    display: block;
+    margin-top: 2rem;
+  }
+  header .container .headerItem nav.show {
+    display: none;
+  }
+}
+
+.hero {
+  background-color: hsl(269, 36%, 22%);
+  color: white;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  padding-top: 100px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  overflow: hidden;
+}
+.hero .parents {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+}
+.hero .parents .bg-img-hero {
+  width: 100%;
+  height: 100vh;
+}
+
+.hero .parents .bg-img-hero img {
+  max-width: 100%;
+  max-height: 100%;
+}
+.hero .section-subtitle span {
+  color: hsl(22, 90%, 56%);
+  display: block;
+  font-weight: bold;
+  font-size: 1rem;
+}
+.hero .section-subtitle h1 {
+  margin: 15px 0px;
+  font-size: 3rem;
+}
+.hero .section-subtitle p {
+  font-size: 1.1rem;
+  line-height: 1.7rem;
+  margin-bottom: 2.5rem;
+}
+.hero .section-subtitle ul {
+  list-style-type: none;
+  display: flex;
+  gap: 15px;
+}
+.hero .section-subtitle ul li {
+  cursor: pointer;
+}
+@media only screen and (max-width: 850px) {
+  .hero {
+    height: 170vh;
+  }
+  .hero .parents {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    padding: 3rem 2rem;
+  }
+}
+
+.features {
+  padding-top: 6rem;
+}
+.features p {
+  text-align: center;
+  font-size: 1.2rem;
+  color: hsl(22, 90%, 56%);
+  margin-bottom: 8px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+.features h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  margin-bottom: 3rem;
+  height: auto;
+}
+.features .features-list {
+  display: grid;
+  max-width: 75%;
+  margin: auto;
+  grid-template-columns: repeat(4, 1fr);
+  position: relative;
+  gap: 20px;
+}
+.features .features-list .single {
+  background-color: white;
+  height: 200px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding: 20px 20px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  border-radius: 15px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+.features .features-list .single .child-single ion-icon {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  color: hsl(22, 90%, 56%);
+}
+.features .features-list .single .child-single h3 {
+  font-size: 1.4rem;
+  margin-bottom: 15px;
+  font-weight: bolder;
+}
+.features .features-list .single .child-single p {
+  font-size: 1rem;
+  line-height: 1.4rem;
+  color: hsl(0, 0%, 34%);
+  font-weight: 100;
+}
+@media only screen and (max-width: 850px) {
+  .features .features-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .features .features-list {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .features .features-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
+@media only screen and (max-width: 440px) {
+  .features .features-list {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+  }
+}
+.about {
+  background-color: hsl(280, 9%, 94%);
+  margin-top: 8em;
+  height: auto;
+}
+.about .about-container {
+  max-width: 80%;
+  margin: auto;
+}
+.about .about-parent {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 4rem;
+  padding: 2rem 0rem;
+}
+.about .about-parent .about-img img {
+  width: 95%;
+  height: 95%;
+}
+.about .about-content {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+.about .about-content span {
+  font-size: 1.3rem;
+  color: hsl(22, 90%, 56%);
+}
+.about .about-content h2 {
+  margin: 15px 0px;
+  font-size: 2.5rem;
+  line-height: 3rem;
+}
+.about .about-content p {
+  color: hsl(0, 0%, 34%);
+  font-weight: 200;
+  line-height: 1.7rem;
+  margin-bottom: 2rem;
+}
+.about .about-content .fet-about .child-about {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+}
+.about .about-content .fet-about .child-about .icon-about {
+  background-color: hsl(22, 90%, 56%);
+  padding: 13px;
+  border-radius: 50%;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
+.about .about-content .fet-about .child-about .icon-about ion-icon {
+  font-weight: bold;
+  color: white;
+}
+.about .about-content .fet-about .child-about div h3 {
+  font-size: 1.5rem;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+@media only screen and (max-width: 850px) {
+  .about .about-parent {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 4rem;
+  }
+}
+/*about 2*/
+.about-2 {
+  margin-top: 4rem;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+.about-2 .about2-contaner {
+  max-width: 80%;
+  margin: auto;
+}
+
+.about-2 .about2-parent {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 60px;
+}
+.about-2 .about2-parent div img {
+  width: 90%;
+  height: 100%;
+}
+
+.about-2 .about2-parent div span {
+  font-size: 1.1rem;
+  color: hsl(22, 90%, 56%);
+  font-weight: 400;
+}
+
+.about-2 .about2-parent div h2 {
+  margin: 15px 0px;
+  font-weight: bold;
+  font-size: 2.5rem;
+}
+.about-2 .about2-parent div .text1 {
+  margin-bottom: 1.7rem;
+  color: hsl(0, 0%, 34%);
+}
+.about-2 .about2-parent div .text2 {
+  margin-bottom: 1.7rem;
+  color: hsl(0, 0%, 34%);
+}
+.about-2 .about2-parent div button {
+  font-size: unset;
+  padding: 15px 30px;
+  background-color: hsl(269, 36%, 22%);
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 850px) {
+  .about-2 .about2-parent {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+    gap: 40px;
+  }
+}
+
+/* blog*/
+.blog {
+  margin-top: 4rem;
+}
+.blog .blog-container {
+  max-width: 80%;
+  margin: auto;
+}
+.blog span {
+  text-align: center;
+  width: 100%;
+  font-size: 1.3rem;
+  color: hsl(22, 90%, 56%);
+  display: block;
+  margin-bottom: 5px;
+}
+.blog h2 {
+  text-align: center;
+  width: 100%;
+  font-size: 2.2rem;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+.blog .liste-blog {
+  margin-top: 2.5rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.blog .liste-blog .single-list {
+  background-color: white;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  max-height: 500px;
+  padding: 1.4rem 1.7rem;
+}
+
+.blog .liste-blog div .blog-img {
+  height: 60%;
+}
+.blog .liste-blog div .blog-img img {
+  height: 100%;
+  width: 100%;
+}
+.blog .liste-blog .liste-info {
+  padding: 20px 0;
+}
+.blog .liste-blog .liste-info .blog-date {
+  display: flex;
+  align-items: baseline;
+  gap: 18px;
+}
+.blog .liste-blog .liste-info .blog-date .child-blog {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+.blog .liste-blog .liste-info .blog-date .child-blog ion-icon {
+  color: hsl(22, 90%, 56%);
+}
+.blog .liste-blog .liste-info .blog-date .child-blog p {
+  font-size: 1rem;
+  color: hsl(0, 0%, 34%);
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+.blog .liste-blog .liste-info h3 {
+  margin: 17px 0;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+.blog .liste-blog .liste-info h3 a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.4rem;
+  transition: 0.25s ease;
+}
+.blog .liste-blog .liste-info h3 a:hover {
+  color: hsl(22, 90%, 56%);
+}
+.blog .liste-blog .liste-info button {
+  width: 100%;
+  padding: 21px 0;
+  font-size: unset;
+  cursor: pointer;
+  color: hsl(22, 90%, 56%);
+  padding-bottom: 15px;
+  background-color: transparent;
+  border: 1px solid hsl(280, 9%, 94%);
+  outline: none;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: 0.25s ease;
+}
+.blog .liste-blog .liste-info button:hover {
+  color: white;
+  background-color: hsl(22, 90%, 56%);
+}
+
+@media only screen and (max-width: 1311px) {
+  .blog .liste-blog {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
+
+@media only screen and (max-width: 830px) {
+  .blog .liste-blog {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+  }
+}
+
+.footer {
+  background-color: hsl(280, 9%, 94%);
+  margin-top: 7rem;
+}
+
+.footer .footer-container {
+  max-width: 80%;
+  margin: auto;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  padding: 6rem 0;
+}
+.footer .footer-container {
+  display: grid;
+  grid-template-columns: 1fr 0.5fr 0.5fr 0.5fr;
+  gap: 30px;
+}
+.footer .footer-container div .first {
+  font-size: 2.1rem;
+  margin-bottom: 15px;
+}
+.footer .footer-container div p {
+  line-height: 1.8rem;
+  font-size: 1.2rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: hsl(0, 0%, 34%);
+  margin-bottom: 35px;
+}
+.footer .footer-container div .social-media {
+  display: flex;
+  gap: 2.4rem;
+}
+.footer .footer-container div .social-media li {
+  background-color: white;
+  padding: 15px 18px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: ease 0.7s;
+  font-size: 20px;
+}
+.footer .footer-container div .social-media li:hover {
+  background-color: hsl(22, 90%, 56%);
+  color: white;
+}
+.footer .footer-container div ul {
+  color: hsl(0, 0%, 34%);
+  margin-top: 20px;
+  list-style-type: none;
+}
+.footer .footer-bottom .bottom-container {
+  max-width: 80%;
+  margin: auto;
+}
+
+.footer .footer-container div ul li {
+  display: block;
+  margin-bottom: 20px;
+}
+.footer .footer-container div ul li a {
+  color: hsl(0, 0%, 34%);
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+
+.footer .footer-container div .info-footer li {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.footer .footer-container div .info-footer li ion-icon {
+  color: hsl(22, 90%, 56%);
+}
+
+.footer .footer-bottom {
+  padding-block: 20px;
+  border-block-start: 1px solid hsl(0, 1%, 85%);
+  text-align: center;
+}
+.footer .footer-bottom p {
+  font-size: 1.1rem;
+}
+.footer .footer-bottom p a {
+  text-decoration: none;
+  color: hsl(22, 90%, 56%);
+}
+@media only screen and (max-width: 1230px) {
+  .footer .footer-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .footer .footer-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 30px;
+  }
+}
